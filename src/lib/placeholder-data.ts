@@ -18,7 +18,7 @@ export const produceListings: Produce[] = [
     price: 120,
     quantity: 500,
     quality: 'Premium',
-    imageUrl: 'https://picsum.photos/seed/tomatoes/400/300',
+    imageUrl: 'https://shorturl.at/Dxec0',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const produceListings: Produce[] = [
     price: 50,
     quantity: 2000,
     quality: 'Standard',
-    imageUrl: 'https://picsum.photos/seed/maize/400/300',
+    imageUrl: 'https://shorturl.at/dEACn',
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const produceListings: Produce[] = [
     price: 80,
     quantity: 300,
     quality: 'Premium',
-    imageUrl: 'https://picsum.photos/seed/cabbages/400/300',
+    imageUrl: 'https://shorturl.at/u7kzm',
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ export const produceListings: Produce[] = [
     price: 150,
     quantity: 250,
     quality: 'Premium',
-    imageUrl: 'https://picsum.photos/seed/carrots/400/300',
+    imageUrl: 'https://shorturl.at/7QVLM',
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const produceListings: Produce[] = [
     price: 40,
     quantity: 1000,
     quality: 'Standard',
-    imageUrl: 'https://picsum.photos/seed/kale/400/300',
+    imageUrl: 'https://tinyurl.com/5bn999nu',
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const produceListings: Produce[] = [
     price: 90,
     quantity: 1500,
     quality: 'Fair',
-    imageUrl: 'https://picsum.photos/seed/potatoes/400/300',
+    imageUrl: 'https://shorturl.at/vxLFu',
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ export const produceListings: Produce[] = [
     price: 110,
     quantity: 400,
     quality: 'Standard',
-    imageUrl: 'https://picsum.photos/seed/onions/400/300',
+    imageUrl: 'https://tinyurl.com/mju36697',
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ export const produceListings: Produce[] = [
     price: 200,
     quantity: 600,
     quality: 'Premium',
-    imageUrl: 'https://picsum.photos/seed/mangoes/400/300',
+    imageUrl: 'https://tinyurl.com/yeyvz3ya',
   },
 ];
 
