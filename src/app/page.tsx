@@ -38,12 +38,12 @@ export default function Home() {
               </div>
               <div className="relative h-64 md:h-96 lg:h-[500px] rounded-2xl shadow-2xl overflow-hidden">
                 <Image
-                  src="https://picsum.photos/1200/800?random=2"
+                  src="https://images.unsplash.com/photo-1620714223084-86c9df2c97a8?q=80&w=1287"
                   alt="A screenshot of the Mkulima Connect buyer dashboard."
                   fill
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 hover:scale-105"
-                  data-ai-hint="dashboard screenshot"
+                  data-ai-hint="app screenshot"
                   priority
                 />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
