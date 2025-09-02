@@ -84,7 +84,7 @@ export function Header() {
             <Button asChild variant="secondary" className="rounded-full hidden sm:flex">
               <Link href="/admin">
                 <Leaf className="mr-2 h-4 w-4" />
-                Farmer Portal
+                Admin Portal
               </Link>
             </Button>
             <Button asChild className="ml-2 rounded-full">
