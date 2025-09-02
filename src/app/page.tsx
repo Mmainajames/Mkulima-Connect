@@ -38,7 +38,7 @@ export default function Home() {
               </div>
               <div className="relative h-64 md:h-96 lg:h-[500px] rounded-2xl shadow-2xl overflow-hidden">
                 <Image
-                  src="https://plus.unsplash.com/premium_photo-1663040544089-d599a00b841a?q=80&w=1470"
+                  src="https://images.unsplash.com/photo-1630514937241-0177d6185348?q=80&w=1470"
                   alt="A screenshot of the Mkulima Connect buyer dashboard."
                   fill
                   style={{ objectFit: 'cover' }}
