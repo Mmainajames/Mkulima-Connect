@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { MainLayout } from '@/components/main-layout';
 import { produceListings } from '@/lib/placeholder-data';
 import { ProduceCard } from '@/components/produce-card';
-import { ArrowRight, CheckCircle, Leaf, ShoppingCart, Truck } from 'lucide-react';
+import { ArrowRight, Check, CheckCircle, Leaf, ShoppingCart, Truck } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -96,7 +96,68 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="featured-produce" className="py-20 md:py-28 bg-gray-50 dark:bg-gray-900">
+        <section id="pricing" className="py-20 md:py-28 bg-gray-50 dark:bg-gray-900">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center space-y-4 mb-12">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Pricing & Tiers</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Choose a plan that works for you.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <Card className="flex flex-col rounded-2xl shadow-lg">
+                <CardHeader className="text-center p-6">
+                  <CardTitle className="font-headline text-2xl">Freemium</CardTitle>
+                  <CardDescription>For getting started</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow p-6 space-y-4">
+                   <ul className="space-y-2">
+                    <li className="flex items-start"><Check className="h-5 w-5 text-primary mr-2 shrink-0 mt-1" /><span>Up to KES 25,000 for first 3 sales</span></li>
+                    <li className="flex items-start"><Check className="h-5 w-5 text-primary mr-2 shrink-0 mt-1" /><span>Then 1% commission on subsequent sales</span></li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="p-6">
+                  <Button variant="outline" className="w-full rounded-full">Get Started</Button>
+                </CardFooter>
+              </Card>
+              <Card className="flex flex-col rounded-2xl shadow-lg border-primary border-2 relative">
+                 <div className="absolute top-0 -translate-y-1/2 w-full flex justify-center">
+                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">Most Popular</div>
+                </div>
+                <CardHeader className="text-center p-6">
+                  <CardTitle className="font-headline text-2xl">Tier 2</CardTitle>
+                  <CardDescription>For growing businesses</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow p-6 space-y-4">
+                  <div className="text-3xl font-bold text-center">1%</div>
+                  <p className="text-center text-gray-500">Commission</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start"><Check className="h-5 w-5 text-primary mr-2 shrink-0 mt-1" /><span>For sales volumes between KES 50k - 100k</span></li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="p-6">
+                  <Button className="w-full rounded-full">Upgrade Plan</Button>
+                </CardFooter>
+              </Card>
+              <Card className="flex flex-col rounded-2xl shadow-lg">
+                <CardHeader className="text-center p-6">
+                  <CardTitle className="font-headline text-2xl">Pro</CardTitle>
+                  <CardDescription>For large-scale operations</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow p-6 space-y-4">
+                   <div className="text-3xl font-bold text-center">3%</div>
+                   <p className="text-center text-gray-500">Commission</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start"><Check className="h-5 w-5 text-primary mr-2 shrink-0 mt-1" /><span>For sales volumes above KES 100k</span></li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="p-6">
+                  <Button variant="outline" className="w-full rounded-full">Contact Sales</Button>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="featured-produce" className="py-20 md:py-28 bg-white dark:bg-gray-950">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Featured Produce</h2>
@@ -119,7 +180,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="testimonials" className="py-20 md:py-28 bg-white dark:bg-gray-950">
+        <section id="testimonials" className="py-20 md:py-28 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">From Our Community</h2>
@@ -128,7 +189,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-6 rounded-2xl shadow-lg bg-gray-50 dark:bg-gray-900">
+              <Card className="p-6 rounded-2xl shadow-lg bg-white dark:bg-gray-950">
                 <CardContent className="flex flex-col items-center text-center">
                   <Avatar className="w-20 h-20 mb-4">
                     <AvatarImage src="https://picsum.photos/id/431/100/100" />
@@ -141,7 +202,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500">Farmer, Nakuru</p>
                 </CardContent>
               </Card>
-              <Card className="p-6 rounded-2xl shadow-lg bg-gray-50 dark:bg-gray-900">
+              <Card className="p-6 rounded-2xl shadow-lg bg-white dark:bg-gray-950">
                 <CardContent className="flex flex-col items-center text-center">
                   <Avatar className="w-20 h-20 mb-4">
                     <AvatarImage src="https://picsum.photos/id/64/100/100" />
