@@ -38,12 +38,12 @@ export default function Home() {
               </div>
               <div className="relative h-80 md:h-[450px] lg:h-[600px] rounded-2xl shadow-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1620005342617-2139a0356157?q=80&w=1287"
-                  alt="A screenshot of the Mkulima Connect mobile app interface showing carrots with a Make Offer button."
+                  src="https://media.istockphoto.com/id/1482990006/photo/woman-ordering-groceries-delivery.jpg?s=1024x1024&w=is&k=20&c=ptA97RMxbMJJuUVHEwpKX7KvaH3QAL390uUgOuV-OLs="
+                  alt="Woman ordering groceries for delivery on a mobile app."
                   fill
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 hover:scale-105"
-                  data-ai-hint="mobile app carrots"
+                  data-ai-hint="grocery shopping app"
                   priority
                 />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
