@@ -47,6 +47,16 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center">
+           <div className="mb-4">
+              <a href="https://intasend.com/security" target="_blank" rel="noopener noreferrer">
+                  <img src="https://intasend-prod-static.s3.amazonaws.com/img/trust-badges/intasend-trust-badge-no-mpesa-hr-dark.png" width="375px" alt="IntaSend Secure Payments (PCI-DSS Compliant)" style={{display: 'inline-block'}} />
+              </a>
+              <strong>
+                <a style={{display: 'block', color: 'inherit', textDecoration: 'none', fontSize: '0.8em', marginTop: '0.6em'}} href="https://intasend.com/security" target="_blank" rel="noopener noreferrer">
+                  Secured by IntaSend Payments
+                </a>
+              </strong>
+            </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             © {new Date().getFullYear()} Mkulima Connect. All rights reserved.
           </p>
