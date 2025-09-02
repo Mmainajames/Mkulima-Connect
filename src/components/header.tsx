@@ -88,7 +88,7 @@ export function Header() {
               </Link>
             </Button>
             <Button asChild className="ml-2 rounded-full">
-              <Link href="#">Sign In</Link>
+              <Link href="/auth">Sign In</Link>
             </Button>
           </nav>
         </div>
